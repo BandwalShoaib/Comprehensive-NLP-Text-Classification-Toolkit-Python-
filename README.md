@@ -1,72 +1,56 @@
-# 📝 Text Classification & NLP Techniques in Python
+# Text Processing and Sentiment Analysis Project
 
-This repository contains a collection of **Jupyter Notebooks** demonstrating key **Natural Language Processing (NLP)** and **Machine Learning** techniques for text analysis and classification.  
-The project walks through text preprocessing, feature extraction, model building, linguistic analysis, sentiment analysis, and topic modeling.
+## Overview
+This project demonstrates **text processing** and **sentiment analysis** on two datasets:
 
----
-
-## 📚 **Contents**
-
-1. **Text Preprocessing**
-   - Lowercasing
-   - Stopword Removal
-   - Regular Expressions (Regex) Cleaning
-   - Lemmatization
-   - Stemming
-
-2. **Feature Extraction**
-   - Bag of Words (BoW)
-   - TF–IDF Vectorization
-
-3. **Classification Models**
-   - Logistic Regression (LR)
-   - Naive Bayes Classifier
-   - Linear SVM (Support Vector Machine)
-
-4. **Linguistic Analysis**
-   - POS Tagging (Part of Speech Tagging) using **spaCy**
-   - NER (Named Entity Recognition) using **spaCy**
-
-5. **Sentiment Analysis**
-   - **TextBlob** Sentiment Polarity & Subjectivity
-   - **VADER** (Valence Aware Dictionary for Sentiment Reasoning)
-   - Transformer-based Sentiment Analysis (e.g. HuggingFace pipeline)
-
-6. **Topic Modeling**
-   - **LDA (Latent Dirichlet Allocation)** Topic Modeling
-   - **LSI (Latent Semantic Indexing)** Topic Modeling
-   - Coherence Score Evaluation for Optimal Topics
+1. **Trip Advisor Reviews** – A dataset containing hotel or travel reviews in CSV format.
+2. **Book Reviews** – A dataset containing book reviews in CSV format.
 
 ---
 
-## 🛠️ **Tech Stack**
+## Datasets
+- **Trip Advisor CSV**: Contains reviews related to hotels, trips, and destinations.
+- **Book Reviews CSV**: Contains user reviews for different books.
 
-- **Language:** Python 3.x  
-- **Environment:** Jupyter Notebook  
-- **Libraries:**
-  - `numpy`, `pandas`, `matplotlib`, `seaborn`
-  - `nltk`, `re`
-  - `scikit-learn` (for ML models)
-  - `spacy` (for POS & NER tagging)
-  - `textblob`, `vaderSentiment`
-  - `transformers` (for transformer-based sentiment)
-  - `gensim` (for LDA & LSI)
-  
 ---
 
-📌 Key Highlights
+## Features / Work Done
 
-End-to-end text classification pipeline
+### 1. Trip Advisor Reviews
+- **Text Preprocessing**:
+  - Converted text to lowercase
+  - Removed stopwords
+  - Applied regular expressions to clean the text
+  - Performed **lemmatization** and **stemming**
+- **Linguistic Analysis**:
+  - **POS (Part-of-Speech) Tagging**: Identifying nouns, verbs, adjectives, etc.
+  - **NER (Named Entity Recognition) Tagging**: Extracting entities like locations, organizations, and person names
 
-Implementation of multiple feature extraction and modeling techniques
+---
 
-Linguistic analysis through POS and NER
+### 2. Book Reviews
+- **Text Preprocessing**:
+  - Lowercasing, removing stopwords, regex cleaning, lemmatization, and stemming
+- **Sentiment Analysis**:
+  - **TextBlob**: Performed polarity and subjectivity analysis
+  - **VADER**: Generated compound sentiment scores for each review
+- Visualizations or analysis (optional) to summarize positive, negative, and neutral sentiments
 
-Comparison between classical ML models and Transformer-based sentiment
+---
+Requirements
 
-Coherence evaluation to choose optimal topics for LDA/LSI
+The main Python libraries used:
 
-📜 License
+pandas
 
-This project is licensed under the MIT License.
-You are free to use, modify, and distribute this code with attribution.
+nltk
+
+spacy
+
+textblob
+
+vaderSentiment
+
+re
+
+matplotlib / seaborn (optional for visualizations)
